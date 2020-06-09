@@ -14,15 +14,28 @@ class Clicked extends React.Component {
     
     handleIncrement = () => {
         this.setState({ count: this.state.count + 1 });
-      };
+    };
+
+    handleLoss = () => {
+        this.setState({ count: 0});
+    }
+
+    restartGame = () => {
+        this.handleLoss();
+        for (let i = 0; i < images.length; i++) {
+            images[i].clicked = false;
+        }
+    }
 
     beenClicked = (event) => {
         if (event.target.getAttribute('data-clicked') === "true") {
             console.log("you lost");
+            this.restartGame();
         } else {
             event.target.setAttribute('data-clicked', true);
+            this.handleIncrement();
         }
-        this.handleIncrement();
+        
     }
 
     render() {
