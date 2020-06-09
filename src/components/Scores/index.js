@@ -3,11 +3,11 @@ import React from "react";
 const Scores = props => (
     <div> 
         <p>
-            Your Score: {props.count}
+            Your Score: {props.yourScore}
         </p>
-        {/* <p>
+        <p>
             High Score: {props.highScore}
-        </p> */}
+        </p>
     </div>
 )
 
