@@ -1,22 +1,13 @@
 import React from "react";
 import Wrapper from "./components/Wrapper";
-import Navbar from "./components/Navbar/Navbar";
-import images from "./images.json";
-import PlantImage from "./components/Images";
+import Clicked from "./components/Clicked"
 
-function App() {
-    let allPlants = images.map(image => {
-        return <PlantImage {...image}/>
-    })
-    
-    return (
-        
-        <Wrapper>
-            <Navbar/>
-            {allPlants}
-        </Wrapper>
-        
-    )
-}
+function App () {
+        return (
+            <Wrapper>
+                <Clicked></Clicked>
+            </Wrapper>
+        )
+    } 
 
 export default App;

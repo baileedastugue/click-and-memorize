@@ -4,16 +4,17 @@ import "./style.css";
 
 
 function PlantImage(props) {
-    console.log(props);
+    // console.log(props);
 
     return (
         <div className="img-container">
-            <button>
+            <button >
                 <img
-                    key={props.id}
+                    id={props.id}
                     alt={props.alt}
                     src={props.image}
-                    // data-clicked={props.clicked}
+                    data-clicked={props.clicked}
+                    onClick={props.handleIncrement}
                 />
             </button>
         </div>
