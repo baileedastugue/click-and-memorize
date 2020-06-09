@@ -16,6 +16,15 @@ class Clicked extends React.Component {
         this.setState({ count: this.state.count + 1 });
       };
 
+    beenClicked = (event) => {
+        if (event.target.getAttribute('data-clicked') === "true") {
+            console.log("you lost");
+        } else {
+            event.target.setAttribute('data-clicked', true);
+        }
+        this.handleIncrement();
+    }
+
     render() {
         return (
             <Wrapper>
@@ -25,7 +34,7 @@ class Clicked extends React.Component {
                 {images.map(image => (
                     <PlantImage 
                         {...image} 
-                        handleIncrement={this.handleIncrement}
+                        beenClicked={this.beenClicked}
                         />
                 ))}
             </Wrapper>

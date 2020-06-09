@@ -14,7 +14,7 @@ function PlantImage(props) {
                     alt={props.alt}
                     src={props.image}
                     data-clicked={props.clicked}
-                    onClick={props.handleIncrement}
+                    onClick={props.beenClicked}
                 />
             </button>
         </div>
