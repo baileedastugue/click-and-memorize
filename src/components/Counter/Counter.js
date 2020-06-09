@@ -14,7 +14,7 @@ class Counter extends React.Component {
 
     render () {
         return (
-            <p count={this.state.count} handleIncrement={this.handleIncrement}>Click Counter</p>
+            {Counter}
         )
     }
 }
