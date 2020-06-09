@@ -40,5 +40,29 @@
         "image": "https://images.unsplash.com/photo-1504198266287-1659872e6590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
         "alt": "plant with white background",
         "clicked":  false
+    },
+    {
+        "id": 7,
+        "image": "https://images.unsplash.com/photo-1536882240095-0379873feb4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "alt": "plant with white background",
+        "clicked":  false
+    },
+    {
+        "id": 8,
+        "image": "https://images.unsplash.com/photo-1485902409384-e367af5b5c92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "alt": "plant with white background",
+        "clicked":  false
+    },
+    {
+        "id": 9,
+        "image": "https://images.unsplash.com/photo-1466781783364-36c955e42a7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "alt": "plant with white background",
+        "clicked":  false
+    },
+    {
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1548688265-62dae8daeb24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+        "alt": "plant with white background",
+        "clicked":  false
     }
 ]

@@ -4,9 +4,10 @@
 
 .img-container {
     display: inline-flex;
-    margin: 1vw;
+    margin: 2vw;
 }
 
 img {
-    height: 20vw;
+    height: 10vw;
 }
+

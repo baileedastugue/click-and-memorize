@@ -4,6 +4,7 @@ import Clicked from "./components/Clicked"
 
 function App () {
         return (
+            
             <Wrapper>
                 <Clicked></Clicked>
             </Wrapper>

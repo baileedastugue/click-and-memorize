@@ -8,7 +8,7 @@ function PlantImage(props) {
 
     return (
         <div className="img-container">
-            <button >
+            {/* <button > */}
                 <img
                     id={props.id}
                     alt={props.alt}
@@ -16,7 +16,7 @@ function PlantImage(props) {
                     data-clicked={props.clicked}
                     onClick={props.beenClicked}
                 />
-            </button>
+            {/* </button> */}
         </div>
     )
 }

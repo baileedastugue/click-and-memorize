@@ -1,13 +1,14 @@
 import React from "react";
+import style from "./style.css";
 
 const Scores = props => (
-    <div> 
-        <p>
+    <div style={style.scores} className="scores"> 
+        <h1>
             Your Score: {props.yourScore}
-        </p>
-        <p>
+        </h1>
+        <h1>
             High Score: {props.highScore}
-        </p>
+        </h1>
     </div>
 )
 
