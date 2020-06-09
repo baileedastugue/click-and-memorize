@@ -21,10 +21,12 @@ class Clicked extends React.Component {
     }
 
     restartGame = () => {
-        this.handleLoss();
         for (let i = 0; i < images.length; i++) {
-            images[i].clicked = false;
+            document.getElementById(i).setAttribute('data-clicked', false);
+            // images[i].clicked = false;
+            // console.log(images[i].clicked);
         }
+        this.handleLoss();
     }
 
     beenClicked = (event) => {
