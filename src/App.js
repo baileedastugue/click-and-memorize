@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Wrapper from "./components/Wrapper";
+import Navbar from "./components/Navbar/Navbar";
+import images from "./images.json";
+import PlantImage from "./components/Images";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let allPlants = images.map(image => {
+        return <PlantImage {...image}/>
+    })
+    
+    return (
+        <Wrapper>
+            <Navbar/>
+            {allPlants}
+        </Wrapper>
+        
+    )
 }
 
 export default App;
