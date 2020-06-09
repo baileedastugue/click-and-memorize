@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,SACI,YAAa,CACb,kBAAmB,CACnB,4BAA6B,CAC7B,wBAAyB,CACzB,aACJ,CANA,EACI,qBACJ,CAEA,eACI,mBAAoB,CACpB,UACJ,CAEA,IACI,WACJ,CAXA,IACI,UAAW,CACX,wBAAyB,CACzB,WACJ","file":"main.d50476f9.chunk.css","sourcesContent":["nav {\n    width: 100%;\n    background-color: #65AD37;\n    height: 10vw;\n}"]}
