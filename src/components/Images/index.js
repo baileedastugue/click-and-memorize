@@ -5,7 +5,7 @@ import "./style.css";
 
 function PlantImage(props) {
     // console.log(props);
-
+    console.log(props.id);
     return (
         <div className="img-container">
             {/* <button > */}

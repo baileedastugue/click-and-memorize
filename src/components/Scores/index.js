@@ -3,12 +3,12 @@ import style from "./style.css";
 
 const Scores = props => (
     <div style={style.scores} className="scores"> 
-        <h1>
+        <h3>
             Your Score: {props.yourScore}
-        </h1>
-        <h1>
+        </h3>
+        <h3>
             High Score: {props.highScore}
-        </h1>
+        </h3>
     </div>
 )
 

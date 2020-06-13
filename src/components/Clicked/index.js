@@ -10,9 +10,14 @@ import Scores from "../Scores"
 class Clicked extends React.Component {
     state = {
         yourScore: 0,
-        highScore: 0
-      };
+        highScore: 0,
+        images: images,
+    };
     
+    // componentDidMount() {
+    //     this.shuffleImages();
+    // };
+
     handleIncrement = () => {
         this.setState({ yourScore: this.state.yourScore + 1 });
 
@@ -27,36 +32,38 @@ class Clicked extends React.Component {
     }
 
     restartGame = () => {
-        for (let i = 0; i < images.length; i++) {
-            document.getElementById(i).setAttribute('data-clicked', false);
-            // images[i].clicked = false;
-            // console.log(images[i].clicked);
-        }
+        this.state.images.map((image) => {
+            image.clicked = false;
+        })
         this.handleLoss();
     }
 
     shuffleImages = () => {
         // loop from https://medium.com/@nitinpatel_20236/how-to-shuffle-correctly-shuffle-an-array-in-javascript-15ea3f84bfb
         // console.log(images);
-        for(let i = images.length-1; i > 0; i--) {
+        for(let i = this.state.images.length-1; i > 0; i--) {
             const j = Math.floor(Math.random() * i)
             const temp = images[i]
             images[i] = images[j]
             images[j] = temp
-          }
+        }
+        return images;
     }
 
     beenClicked = (event) => {
-        if (event.target.getAttribute('data-clicked') === "true") {
-            console.log(event.target);
-            console.log("you lost");
-            this.restartGame();
-        } else {
-            event.target.setAttribute('data-clicked', true);
-            console.log(event.target.getAttribute('data-clicked', true))
-            this.handleIncrement();
-        }
-        this.shuffleImages();
+        this.state.images.map((image) => {
+          if (parseInt(event.target.id) === image.id) {
+            if (image.clicked === false) {
+                this.handleIncrement();
+                image.clicked = true;
+            } else {
+                this.restartGame();
+            }
+          }
+        });
+        this.setState({
+            images: this.shuffleImages()
+        });
     }
 
     render() {
@@ -65,9 +72,9 @@ class Clicked extends React.Component {
                 <Navbar>
                     <Scores yourScore={this.state.yourScore} highScore={this.state.highScore}/>
                 </Navbar>
-                {images.map(image => (
+                {this.state.images.map(image => (
                     <PlantImage 
-                        {...image} 
+                        {...image}
                         beenClicked={this.beenClicked}
                         />
                 ))}
