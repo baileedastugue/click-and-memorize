@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,SACI,YAAa,CACb,kBAAmB,CACnB,4BAA6B,CAC7B,wBAAyB,CACzB,aAEJ,CAPA,EACI,qBACJ,CAEA,eACI,mBAAoB,CACpB,UACJ,CAEA,IACI,WACJ,CAXA,IACI,UAAW,CACX,wBAAyB,CACzB,UACJ,CAJA,WACI,UAAY,CACZ,iBACJ","file":"main.7ac3b58e.chunk.css","sourcesContent":[".scores h3 {\n    color: white;\n    text-align: center;\n}"]}
